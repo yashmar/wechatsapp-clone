@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#25D366" />
+  <title>WhatsApp — Clone Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="logo" href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp logo">
+      </a>
+      <div class="store-badges">
+        <a href="#download"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play"/></a>
+        <a href="#download"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store"/></a>
+      </div>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#download">Download</a>
+        <a href="#web">WhatsApp Web</a>
+        <a href="#blog">Blog</a>
+      </nav>
+      <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+      <div class="cta">
+        <a class="btn btn-primary" href="#download">Download</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-left">
+        <h1>Simple WhatsApp Clone — Demo</h1>
+        <p class="lead">A static front-end demo that recreates the look and animations of the WhatsApp landing page using HTML, CSS and JavaScript. All images are hotlinked via URLs.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#download">Download</a>
+          <button id="open-chat" class="btn btn-outline">Open Chat Demo</button>
+        </div>
+        <ul class="feature-list" id="features">
+          <li>Responsive layout</li>
+          <li>Animated phone mockup</li>
+          <li>Typing indicator & live chat demo</li>
+        </ul>
+      </div>
+      <div class="hero-right">
+        <div class="phone-mockup" aria-hidden="false">
+          <div class="phone-screen">
+            <div class="chat-header">
+              <img class="avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="avatar">
+              <div class="chat-meta">
+                <div class="name">João</div>
+                <div class="status">online</div>
+              </div>
+              <div class="dots">•••</div>
+            </div>
+
+            <div class="chat-body" id="chat-body">
+              <div class="msg left">
+                <div class="bubble">Hey! Welcome to this WhatsApp clone demo. Tap below to see messages appear.</div>
+                <div class="time">10:00</div>
+              </div>
+              <div class="msg right">
+                <div class="bubble">This demo now saves messages locally and looks better on mobile.</div>
+                <div class="time">10:01</div>
+              </div>
+            </div>
+
+            <div class="chat-input">
+              <div class="typing" id="typing-indicator" aria-hidden="true">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <input id="message-input" placeholder="Type a message" />
+              <button id="send-btn">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container" id="features-grid">
+      <h2>Features you'll love</h2>
+      <p class="lead">A modern UI with animations, responsive layout and small interactions that make the demo feel alive.</p>
+      <div class="grid">
+        <div class="card green">
+          <img src="https://img.icons8.com/fluency/48/000000/whatsapp.png" alt="chat icon" />
+          <h3>Chats</h3>
+          <p>Fast, familiar conversations with animated message bubbles and typing indicators.</p>
+        </div>
+        <div class="card blue">
+          <img src="https://img.icons8.com/fluency/48/000000/video-call.png" alt="call icon" />
+          <h3>Calls</h3>
+          <p>Mockup visuals for voice and video calls — represented as icons and UI hints in the demo.</p>
+        </div>
+        <div class="card purple">
+          <img src="https://img.icons8.com/fluency/48/000000/lock.png" alt="security icon" />
+          <h3>Privacy</h3>
+          <p>Local-only demo behavior: no external servers, images hotlinked for visuals only.</p>
+        </div>
+        <div class="card orange">
+          <img src="https://img.icons8.com/fluency/48/000000/positive-dynamic.png" alt="fast icon" />
+          <h3>Animations</h3>
+          <p>Smooth animated micro-interactions (typing dots, floating phone, slide-in messages).</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="more container">
+      <h2>More about this demo</h2>
+      <p>This page is intentionally longer so you can scroll and test responsive breakpoints, mobile look-and-feel, and how the phone mockup behaves on different screen sizes.</p>
+      <div class="faq">
+        <h3>FAQ</h3>
+        <details>
+          <summary>Does this connect to WhatsApp?</summary>
+          <p>No — this is a static front-end demo. Nothing is sent to remote servers by the UI itself.</p>
+        </details>
+        <details>
+          <summary>Can I save chat history?</summary>
+          <p>Yes. Messages are saved to your browser's localStorage so they persist on reload in the same browser/profile.</p>
+        </details>
+        <details>
+          <summary>Can I change avatars and logos?</summary>
+          <p>All images are loaded by URL. Replace the src attributes in `index.html` with other image URLs to customize.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="how container">
+      <h2>How it works</h2>
+      <p>This demo uses CSS for layout and animations and a tiny bit of JavaScript to simulate typing and incoming messages.</p>
+    </section>
+
+    <section class="download container" id="download">
+      <h2>Get the Demo</h2>
+      <p>Open the `index.html` file in your browser to view the page. The demo is static and doesn't send real messages.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Made with ❤️ — Static demo for learning purposes. Logos and images are hotlinked from public URLs.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
